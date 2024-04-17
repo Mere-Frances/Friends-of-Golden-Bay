@@ -1,0 +1,2776 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.mussel__farming {
+  background-image: url("./images/musselfarmingcard.webp");
+  background-size: cover;
+}
+
+.species__protection {
+  background-image: url("./images/mobilespecies.webp");
+  background-size: cover;
+}
+
+.water__testing {
+  background-image: url("./images/mobilewatertest.webp");
+  background-size: cover;
+}
+
+.landscape {
+  background-image: url("./images/mobilelandscape.webp");
+  background-size: cover;
+}
+
+.aquaculture {
+  background-image: url("./images/aquaculturemobile.webp");
+  background-size: cover;
+}
+
+.climate__change {
+  background-image: url("./images/mobileglobalwarming.webp");
+  background-size: cover;
+}
+
+.mussel__farming--1996 {
+  background-image: url("./images/musselfarming1996.webp");
+  background-size: cover;
+}
+
+.mussel__header--image {
+  background-image: url("./images/musselfarmingcard.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.mussel__item--one {
+  background-image: url("./images/mobilemusselgrid1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.mussel__item--two {
+  background-image: url("./images/mobilemusselgrid2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.mussel__item--three {
+  background-image: url("./images/mobilemusselgrid3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.mussel__item--four {
+  background-image: url("./images/mobilemusselgrid4.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.species__header--image {
+  background-image: url("./images/mobilespecies.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.species__item--one {
+  background-image: url("./images/speciesprotection1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.species__item--two {
+  background-image: url("./images/speciesprotection2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.species__item--three {
+  background-image: url("./images/speciesprotection3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.species__item--four {
+  background-image: url("./images/speciesprotection4.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.water__header--image {
+  background-image: url("./images/mobilewatertest.webp");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Archivo;
+}
+
+:root {
+  --primary-color: #E99312;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #E99312;
+    height: 50px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .home__campaigns--container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 5% 5%;
+    gap: 10vh;
+  }
+  .home__campaigns--container .campaign__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+  }
+  .home__campaigns--container .campaign__card .campaign__card--image {
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+  }
+  .home__campaigns--container .campaign__card h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  .home__campaigns--container .campaign__card p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .home__campaigns--container .campaign__card .campaign__card--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .campaign__card #mussels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .campaign__card #species {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .campaign__card #water {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .mussel-farming {
+    background-image: url("./images/musselfarmingcard.webp");
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+  .navbar .navbar__logo {
+    height: 20vh;
+    padding-top: 15px;
+  }
+  .navbar .navbar__logo a {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    color: #E99312;
+    text-decoration: none;
+  }
+  .navbar .navbar__items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    padding-top: 20vh;
+    position: relative;
+    right: 80px;
+  }
+  .navbar .navbar__items a {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .navbar .navbar__items .active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  .navbar .navbar__hamburger {
+    font-size: 2rem;
+    padding-top: 15px;
+    font-weight: 900;
+  }
+  .navbar .navbar__hamburger #closeHam {
+    display: none;
+    color: #ffffff;
+  }
+  .navbar .navbar__hamburger #openHam {
+    color: #E99312;
+  }
+  .homeheader .homeheader__image {
+    height: 270px;
+    width: 100%;
+    background-image: url("./images/homeheadermobile.webp");
+    background-size: cover;
+  }
+  .homeheader .homeheader__image h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    text-align: center;
+    color: #383838;
+    font-weight: 500;
+    line-height: 50px;
+    padding-top: 5vh;
+  }
+  .homeheader .homeheader__image p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 5% 0 5%;
+  }
+  .homeheader__buttons {
+    position: relative;
+    bottom: 5vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    height: 100px;
+    padding: 0 5% 0 5%;
+  }
+  .homeheader__buttons .homeheader__buttons--card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    width: calc(33.33% - 3vw);
+    max-width: 120px;
+    height: calc(90% + 3vh);
+    max-height: 120px;
+    box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+  }
+  .homeheader__buttons .homeheader__buttons--card .homeheader__buttons--card--icon {
+    width: 25px;
+    height: 35px;
+  }
+  .homeheader__buttons .homeheader__buttons--card h6 {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    width: 80%;
+    color: #383838;
+    text-decoration: none;
+  }
+  .ourstory__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+  .ourstory__image .ourstory__image--container {
+    position: relative;
+    bottom: 5vh;
+    width: 90%;
+    height: 185px;
+    background-image: url("./images/ourstorymobile.webp");
+    background-size: cover;
+  }
+  .main__text {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+  .main__text h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .main__text p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .donate__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E7E7E7;
+    height: 150px;
+    gap: 20px;
+    background-image: url("./images/mobilefloralpattern.webp");
+    background-size: cover;
+  }
+  .donate__container h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .donate__container .main__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #E99312;
+    height: 50px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .home__campaigns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5% 0 5%;
+  }
+  .home__campaigns h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .home__campaigns--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  .aboutheader .aboutheader__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 270px;
+    width: 100%;
+    background-image: url("./images/aboutheader.webp");
+    background-size: cover;
+  }
+  .aboutheader .aboutheader__image h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    text-align: center;
+    color: #383838;
+    font-weight: 500;
+    line-height: 50px;
+  }
+  .aboutheader .aboutheader__image p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    color: #383838;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 20px 0 20px;
+  }
+  .community__iwi--circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 10% 5% 10% 5%;
+  }
+  .community__iwi--circles .iwi__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #E7E7E7;
+    color: #E99312;
+  }
+  .community__iwi--circles .iwi__circle h3 {
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .about__gallery--grid {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .about__gallery--grid .item__1 {
+    background-image: url("./images/gridimage1.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/1/3/2;
+  }
+  .about__gallery--grid .item__2 {
+    background-image: url("./images/gridimage2.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 3/1/4/2;
+  }
+  .about__gallery--grid .item__3 {
+    background-image: url("./images/gridimage3.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 3/2/4/3;
+  }
+  .about__gallery--grid .item__4 {
+    background-image: url("./images/gridimage4.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/2/3/3;
+  }
+  .about__gallery--grid .item__5 {
+    background-image: url("./images/gridimage5.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 4/1/5/3;
+  }
+  .our__history--image {
+    height: 40vh;
+    width: 80%;
+    padding: 10%;
+  }
+  .our__history--image .our__history--image--container {
+    height: 90%;
+    width: 100%;
+    background-image: url("./images/ourhistoryposter.webp");
+    background-size: cover;
+  }
+  .homeheader .campaignheader__image {
+    height: 200px;
+    width: 100%;
+    background-image: url("./images/campaignflowersmobile.webp");
+    background-size: cover;
+  }
+  .homeheader .campaignheader__image h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    text-align: center;
+    color: #383838;
+    font-weight: 500;
+    line-height: 50px;
+    padding-top: 5vh;
+  }
+  .homeheader .campaignheader__image p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    color: #383838;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 20px 0 20px;
+  }
+  .campaign__card--end {
+    margin-bottom: 10vh;
+  }
+  .back__top--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 85vh;
+    right: 5%;
+    z-index: 4;
+    background-color: #E99312;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .homeheader .contactheader__image {
+    height: 130px;
+    width: 100%;
+  }
+  .homeheader .contactheader__image h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    text-align: center;
+    color: #383838;
+    font-weight: 500;
+    line-height: 50px;
+    padding-top: 5vh;
+  }
+  .homeheader .contactheader__image p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    color: #383838;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 20px 0 20px;
+  }
+  .contact__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    background-color: #E7E7E7;
+    gap: 40px;
+  }
+  .contact__content .contact__content--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact__content .contact__content--text h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .contact__content .contact__content--text p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 5px;
+  }
+  .form__container .contact__form {
+    width: 100%;
+  }
+  .form__container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .form__container .form-group {
+    margin-bottom: 15px;
+    padding: 3% 7% 3% 7%;
+  }
+  .form__container .form-group label {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form__container .form-group input[type=text],
+  .form__container .form-group input[type=tel],
+  .form__container .form-group input[type=email],
+  .form__container .form-group textarea {
+    width: 95%;
+    height: 50px;
+    border-radius: 16px;
+    padding: 3%;
+    border: none;
+    background-color: #E7E7E7;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .form__container .form-group textarea {
+    height: 200px;
+  }
+  .form__container button[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #E99312;
+    height: 50px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+  }
+  .form__container .error {
+    border: 1px solid red;
+  }
+  .submitted-message {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+    color: #E99312;
+    padding: 10%;
+    border: 2px solid #E99312;
+    text-align: center;
+  }
+  .homeheader .donateheader__image {
+    height: 190px;
+    width: 100%;
+  }
+  .homeheader .donateheader__image h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    text-align: center;
+    color: #383838;
+    font-weight: 500;
+    line-height: 50px;
+    padding-top: 5vh;
+  }
+  .homeheader .donateheader__image p {
+    font-family: Poppins;
+    font-size: 20px;
+    text-align: center;
+    color: #383838;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 20px 0 20px;
+  }
+  .donation__page--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation__page--container .donation__icons--container {
+    gap: 50px;
+    padding: 5% 5% 10% 5%;
+  }
+  .donation__page--container .donation__icons--container .donation__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10% 0 10% 0;
+  }
+  .donation__page--container .donation__icons--container .donation__icon h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .donation__page--container .donation__icons--container .donation__icon .donation__icon--circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7E7E7;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .donation__page--container .donate__payment--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5% 10% 5%;
+    gap: 30px;
+  }
+  .donation__page--container .donate__payment--container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .donation__page--container .donate__payment--container p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .donation__page--container .donate__payment--container .payment__container--details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation__page--container .donate__payment--container .payment__container--details h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .donation__page--container .donate__payment--container .payment__container--details .payment__details--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70px;
+    background-color: #E99312;
+    border-radius: 16px;
+  }
+  .donation__page--container .donate__payment--container .payment__container--details .payment__details--box h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    text-align: center;
+  }
+  .campaign__section .campaign__container--wrap {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .campaign__section .campaign__container--wrap .campaign__header--text {
+    padding: 0 5% 0 5%;
+  }
+  .campaign__section .campaign__container--wrap h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+    padding-top: 5%;
+  }
+  .campaign__section .campaign__container--wrap p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .campaign__section .campaign__header--image {
+    height: 270px;
+    width: 100%;
+    background-size: cover;
+  }
+  .campaign__section .campaign__content--container {
+    text-align: left;
+    padding: 5%;
+  }
+  .campaign__section .campaign__content--container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .campaign__section .campaign__content--container p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .campaign__section .campaign__content--container h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  .campaign__section .campaign__content--container h5 {
+    font-family: Poppins;
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+    color: #E99312;
+  }
+  .campaign__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 150vh;
+    padding: 15% 0 0% 0;
+  }
+  .campaign__grid .campaign__item--one {
+    grid-area: 1/1/2/2;
+  }
+  .campaign__grid .campaign__item--two {
+    grid-area: 2/1/3/2;
+  }
+  .campaign__grid .campaign__item--three {
+    grid-area: 3/1/4/2;
+  }
+  .campaign__grid .campaign__item--four {
+    grid-area: 4/1/5/2;
+  }
+  .campaign__grid .campaign__grid--item {
+    background-size: cover;
+    background-position: center;
+  }
+  .water__content--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    margin: 10% 0 10% 0;
+  }
+  .water__content--img img {
+    width: inherit;
+  }
+  .water__content--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    margin: 10% 0 10% 0;
+  }
+  .water__content--img img {
+    width: inherit;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7E7E7;
+    height: 370px;
+    width: 100%;
+  }
+  footer .footer__logo--container {
+    width: 250px;
+    height: 100px;
+    background-image: url("./images/mobilefooterlogo.webp");
+    background-size: cover;
+  }
+  footer .footer__content--row {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    padding-top: 50px;
+    gap: 5rem;
+  }
+  footer .footer__content--row .footer__content--column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  footer .footer__content--row .footer__content--column .footer__column--links {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #383838;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .main__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    background-color: #E99312;
+    height: 55px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 27px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .home__campaigns--container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 5% 5%;
+    gap: 10vh;
+  }
+  .home__campaigns--container .campaign__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+  }
+  .home__campaigns--container .campaign__card .campaign__card--image {
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+  }
+  .home__campaigns--container .campaign__card h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  .home__campaigns--container .campaign__card p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .home__campaigns--container .campaign__card .campaign__card--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .campaign__card #mussels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .campaign__card #species {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .campaign__card #water {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .home__campaigns--container .mussel-farming {
+    background-image: url("./images/musselfarmingcard.webp");
+  }
+  h1 {
+    width: 80%;
+    font-family: Poppins;
+    font-size: 56px;
+    text-align: center;
+    color: #383838;
+    font-weight: 500;
+    line-height: 80px;
+  }
+  h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 28px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  p {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    height: 70px;
+    padding: 0 20px 0 20px;
+  }
+  .navbar .navbar__logo {
+    height: 20vh;
+    padding-top: 10px;
+  }
+  .navbar .navbar__logo a {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    color: #E99312;
+    text-decoration: none;
+  }
+  .navbar .navbar__items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    padding-top: 20vh;
+    position: relative;
+    right: 105px;
+  }
+  .navbar .navbar__items a {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .navbar .navbar__items .active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  .navbar .navbar__hamburger {
+    font-size: 2rem;
+    padding-top: 15px;
+    font-weight: 900;
+  }
+  .navbar .navbar__hamburger #closeHam {
+    display: none;
+    color: #ffffff;
+  }
+  .navbar .navbar__hamburger #openHam {
+    color: #E99312;
+  }
+  .homeheader .homeheader__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    background-image: url("./images/homeheadermobile.webp");
+    background-size: cover;
+  }
+  .homeheader .homeheader__image p {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+  }
+  .homeheader__buttons {
+    position: relative;
+    bottom: 5vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    height: 85px;
+    padding: 0 5% 0 5%;
+  }
+  .homeheader__buttons .homeheader__buttons--card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: #ffffff;
+    width: 150px;
+    height: 170%;
+    box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+  }
+  .homeheader__buttons .homeheader__buttons--card .homeheader__buttons--card--icon {
+    width: 35px;
+    height: 40px;
+  }
+  .homeheader__buttons .homeheader__buttons--card h6 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    color: #383838;
+  }
+  .ourstory__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 262px;
+  }
+  .ourstory__image .ourstory__image--container {
+    position: relative;
+    bottom: 20%;
+    width: 95%;
+    height: 110%;
+    background-image: url("./images/ourstorymobile.webp");
+    background-size: cover;
+  }
+  .main__text {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+  .donate__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7E7E7;
+    height: 190px;
+    gap: 20px;
+    background-image: url("./images/mobilefloralpattern.webp");
+    background-size: cover;
+  }
+  .donate__container h5 {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .home__campaigns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5% 0 5%;
+  }
+  .home__campaigns h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .home__campaigns--container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 5% 5%;
+    gap: 10vh;
+  }
+  .home__campaigns--container .campaign__card .campaign__card--image {
+    height: 40vh;
+  }
+  .home__campaigns--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  .aboutheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url("./images/aboutheader.webp");
+    background-size: cover;
+  }
+  .aboutus__community--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus__community--container p {
+    text-align: center;
+  }
+  .community__iwi--circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5% 10% 5%;
+    gap: 5rem;
+  }
+  .community__iwi--circles .iwi__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #E7E7E7;
+    color: #E99312;
+  }
+  .community__iwi--circles .iwi__circle h3 {
+    font-family: Roboto;
+    font-size: 37px;
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+    text-align: center;
+  }
+  .about__gallery--grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .about__gallery--grid .item__1 {
+    background-image: url("./images/gridimage1.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/1/3/2;
+  }
+  .about__gallery--grid .item__2 {
+    background-image: url("./images/gridimage2.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 3/1/4/2;
+  }
+  .about__gallery--grid .item__3 {
+    background-image: url("./images/gridimage3.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 3/2/4/3;
+  }
+  .about__gallery--grid .item__4 {
+    background-image: url("./images/gridimage4.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/2/3/3;
+  }
+  .about__gallery--grid .item__5 {
+    background-image: url("./images/gridimage5.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 4/1/5/3;
+  }
+  .our__history--image {
+    height: 60vh;
+    width: 80%;
+    padding: 10% 10% 0 10%;
+  }
+  .our__history--image .our__history--image--container {
+    height: 90%;
+    width: 100%;
+    background-image: url("./images/ourhistoryposter.webp");
+    background-size: cover;
+  }
+  .about__campaigns--container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5% 5% 5%;
+    gap: 2vh;
+  }
+  .about__campaigns--container .campaign__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+  }
+  .about__campaigns--container .campaign__card .campaign__card--image {
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+  }
+  .about__campaigns--container .campaign__card h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  .about__campaigns--container .campaign__card p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .about__campaigns--container .campaign__card .campaign__card--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .campaign__card #mussels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .campaign__card #species {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .campaign__card #water {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .mussel-farming {
+    background-image: url("./images/musselfarmingcard.webp");
+  }
+  .campaignheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background-image: url("./images/campaignflowerstablet.webp");
+    background-size: cover;
+  }
+  .back__top--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 85vh;
+    right: 5%;
+    z-index: 4;
+    background-color: #E99312;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .back__top--button img {
+    transform: scale(1.2);
+  }
+  .contactheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+  }
+  .contact__page--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__page--container .contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7E7E7;
+    gap: 40px;
+    padding: 5%;
+    width: 90%;
+  }
+  .contact__page--container .contact__content .contact__content--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__page--container .contact__content .contact__content--text h5 {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .contact__page--container .contact__content .contact__content--text p {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .contact__page--container .form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 15px;
+    width: 70%;
+  }
+  .contact__page--container .form__container .contact__form {
+    width: 100%;
+  }
+  .contact__page--container .form__container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .contact__page--container .form__container .form-group {
+    margin-bottom: 15px;
+    padding: 3% 7% 3% 7%;
+  }
+  .contact__page--container .form__container .form-group label {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact__page--container .form__container .form-group input[type=text],
+  .contact__page--container .form__container .form-group input[type=tel],
+  .contact__page--container .form__container .form-group input[type=email],
+  .contact__page--container .form__container .form-group textarea {
+    width: 95%;
+    height: 50px;
+    border-radius: 16px;
+    padding: 3%;
+    border: none;
+    background-color: #E7E7E7;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .contact__page--container .form__container .form-group textarea {
+    height: 250px;
+  }
+  .contact__page--container .form__container button[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    background-color: #E99312;
+    height: 55px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 27px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+  }
+  .contact__page--container .form__container .error {
+    border: 1px solid red;
+  }
+  .contact__page--container .submitted-message {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+    color: #E99312;
+    padding: 10%;
+    border: 2px solid #E99312;
+    text-align: center;
+  }
+  .donateheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+  }
+  .donation__page--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation__page--container .donation__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 15% 0 15% 0;
+  }
+  .donation__page--container .donation__icon h5 {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .donation__page--container .donation__icon .donation__icon--circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7E7E7;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .donation__page--container .donation__icon .donation__icon--circle img {
+    transform: scale(1.5);
+  }
+  .donate__payment--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5% 10% 5%;
+    gap: 30px;
+  }
+  .donate__payment--container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .donate__payment--container p {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .donate__payment--container .payment__container--details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donate__payment--container .payment__container--details .payment__details--box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    background-color: #E99312;
+    border-radius: 16px;
+  }
+  .donate__payment--container .payment__container--details .payment__details--box h5 {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+  }
+  .campaign__section .campaign__container--wrap {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .campaign__section .campaign__container--wrap .campaign__header--text {
+    padding: 0 5% 0 5%;
+  }
+  .campaign__section .campaign__container--wrap h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+    padding-top: 5%;
+  }
+  .campaign__section .campaign__container--wrap p {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .campaign__section .campaign__header--image {
+    height: 270px;
+    width: 100%;
+    background-size: cover;
+  }
+  .campaign__section .campaign__content--container {
+    padding: 5%;
+  }
+  .campaign__section .campaign__content--container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .campaign__section .campaign__content--container p {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .campaign__section .campaign__content--container h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 28px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  .campaign__section .campaign__content--container h5 {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+    color: #E99312;
+  }
+  .campaign__grid {
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .campaign__item--one {
+    grid-area: 1/1/2/3;
+  }
+  .campaign__item--two {
+    grid-area: 2/1/3/2;
+  }
+  .campaign__item--three {
+    grid-area: 1/3/2/4;
+  }
+  .campaign__item--four {
+    grid-area: 2/2/3/4;
+  }
+  .water__content--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    margin: 10% 0 10% 0;
+  }
+  .water__content--img img {
+    width: inherit;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7E7E7;
+    height: 370px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer .footer__logo--container {
+    width: 250px;
+    height: 100px;
+    background-image: url("./images/mobilefooterlogo.webp");
+    background-size: cover;
+  }
+  footer .footer__content--row {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    padding-top: 50px;
+    gap: 5rem;
+  }
+  footer .footer__content--row .footer__content--column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  footer .footer__content--row .footer__content--column .footer__column--links {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #383838;
+    text-decoration: none;
+  }
+  footer footer .footer__content--row {
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1980px) {
+  .main__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: #E99312;
+    height: 80px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  h1 {
+    width: 80%;
+    font-family: Poppins;
+    font-size: 110px;
+    text-align: center;
+    color: #383838;
+    font-weight: 500;
+    line-height: 110px;
+    width: 50%;
+    margin: 0 0 2% 0;
+  }
+  h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  p {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0 40px 0 40px;
+  }
+  .navbar .navbar__logo a {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    color: #E99312;
+    text-decoration: none;
+  }
+  .navbar .navbar__items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .navbar .navbar__items a {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    color: #E99312;
+    text-decoration: none;
+  }
+  .navbar .navbar__items .active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  .navbar .navbar__hamburger {
+    display: none;
+  }
+  .homeheader .homeheader__image {
+    display: flex;
+    align-items: center;
+    padding-top: 15vh;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    background-image: url("./images/homeheaderdesktop.webp");
+    background-size: cover;
+  }
+  .homeheader .homeheader__image p {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .homeheader__buttons {
+    position: relative;
+    bottom: 5vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    height: 85px;
+    padding: 0 5% 0 5%;
+  }
+  .homeheader__buttons .homeheader__buttons--card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+    background-color: #ffffff;
+    width: 250px;
+    height: 270%;
+    box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+  }
+  .homeheader__buttons .homeheader__buttons--card .homeheader__buttons--card--icon {
+    width: 55px;
+    height: 60px;
+  }
+  .homeheader__buttons .homeheader__buttons--card h6 {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    width: 80%;
+    color: #383838;
+  }
+  .ourstory__content--container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 10vh;
+    padding: 0 5% 5% 5%;
+  }
+  .ourstory__content--container h2 {
+    display: flex;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 5%;
+    color: #383838;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .ourstory__content--container .main__text {
+    padding: 2% 5% 0 5%;
+    align-items: flex-start;
+  }
+  .ourstory__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250rem;
+    height: 60vh;
+  }
+  .ourstory__image .ourstory__image--container {
+    width: 100%;
+    height: 110%;
+    background-image: url("./images/ourstorydesktop.webp");
+    background-size: cover;
+  }
+  .donate__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #E7E7E7;
+    height: 200px;
+    gap: 20px;
+    background-image: url("./images/desktopdonateflowers.webp");
+    background-size: cover;
+  }
+  .donate__container h5 {
+    font-family: Poppins;
+    font-size: 30px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    width: 30%;
+    text-align: left;
+  }
+  .home__campaigns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 5% 0 5%;
+  }
+  .home__campaigns--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  .home__campaigns--container {
+    -moz-column-count: 2;
+         column-count: 2;
+    padding: 1% 5% 1% 5%;
+    gap: 5%;
+  }
+  .home__campaigns--container .campaign__card {
+    margin-bottom: 10%;
+    height: 77vh;
+  }
+  .home__campaigns--container .campaign__card .campaign__card--image {
+    height: 40vh;
+  }
+  .home__campaigns--container .campaign__card h4 {
+    padding-top: 3%;
+  }
+  .home__campaigns--container .campaign__card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 50px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .aboutheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: url("./images/aboutheaderdesktop.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .aboutus__community--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5% 0 5%;
+  }
+  .aboutus__community--container h2 {
+    text-align: left;
+    align-items: start;
+  }
+  .aboutus__community--container p {
+    text-align: left;
+    align-items: start;
+  }
+  .community__iwi--circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10% 5% 10% 5%;
+    gap: 10rem;
+  }
+  .community__iwi--circles .iwi__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #E7E7E7;
+    color: #E99312;
+  }
+  .community__iwi--circles .iwi__circle h3 {
+    font-family: Roboto;
+    font-size: 37px;
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+    text-align: center;
+  }
+  .about__gallery--grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .about__gallery--grid .item__1 {
+    background-image: url("./images/gridimage1.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/1/3/2;
+  }
+  .about__gallery--grid .item__2 {
+    background-image: url("./images/gridimage2.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 2/2/3/3;
+  }
+  .about__gallery--grid .item__3 {
+    background-image: url("./images/gridimage3.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 2/3/3/4;
+  }
+  .about__gallery--grid .item__4 {
+    background-image: url("./images/gridimage4.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/4/3/5;
+  }
+  .about__gallery--grid .item__5 {
+    background-image: url("./images/gridimage5.webp");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1/2/2/4;
+  }
+  .main__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__text h2 {
+    padding-top: 5%;
+  }
+  .main__text .ourhistory__content--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 5% 0 5%;
+  }
+  .main__text .ourhistory__content--container p {
+    width: 170%;
+  }
+  .main__text .ourhistory__content--container .our__history--image {
+    height: 40vh;
+    width: 80%;
+    padding: 0 5% 5% 5%;
+  }
+  .main__text .ourhistory__content--container .our__history--image .our__history--image--container {
+    height: 90%;
+    width: 100%;
+    background-image: url("./images/ourhistoryposter.webp");
+    background-size: cover;
+  }
+  .about__campaigns--container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 0 5%;
+    gap: 2vh;
+  }
+  .about__campaigns--container .campaign__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+  }
+  .about__campaigns--container .campaign__card .campaign__card--image {
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+  }
+  .about__campaigns--container .campaign__card h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  .about__campaigns--container .campaign__card p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .about__campaigns--container .campaign__card .campaign__card--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .campaign__card #mussels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .campaign__card #species {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .campaign__card #water {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: #E99312;
+    height: 35px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 3%;
+    cursor: pointer;
+  }
+  .about__campaigns--container .mussel-farming {
+    background-image: url("./images/musselfarmingcard.webp");
+  }
+  .campaignheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: url("./images/campaignflowersdesktop.webp");
+    background-size: cover;
+  }
+  .past__campaigns--single {
+    -moz-column-count: 2;
+         column-count: 2;
+    align-items: start;
+  }
+  .back__top--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 85vh;
+    right: 3%;
+    z-index: 4;
+    background-color: #E99312;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .back__top--button img {
+    transform: scale(1.2);
+  }
+  .contact__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+  }
+  .contact__header .home__campaigns--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 50%;
+  }
+  .contact__header .home__campaigns--button .main__button {
+    width: 55%;
+    background-color: #E99312;
+    height: 80px;
+  }
+  .contactheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 5rem;
+    height: 60vh;
+  }
+  .contactheader__image h1 {
+    width: 100%;
+    text-align: left;
+  }
+  .contact__page--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__page--container .contact__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #E7E7E7;
+    gap: 40px;
+    padding: 5%;
+    width: 90%;
+  }
+  .contact__page--container .contact__content .contact__content--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__page--container .contact__content .contact__content--text h5 {
+    font-family: Poppins;
+    font-size: 30px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .contact__page--container .contact__content .contact__content--text p {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-radius: 15px;
+    width: 70%;
+  }
+  .form__container .contact__form {
+    width: 100%;
+  }
+  .form__container .contact__form--inline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .form__container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .form__container .form-group {
+    margin-bottom: 15px;
+    padding: 2rem;
+  }
+  .form__container .form-group label {
+    font-family: Poppins;
+    font-size: 24px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form__container .form-group input[type=text] {
+    grid-area: 1/1/2/2;
+    width: 95%;
+    height: 50px;
+    border-radius: 16px;
+    padding: 3%;
+    border: none;
+    background-color: #E7E7E7;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .form__container .form-group input[type=tel] {
+    grid-area: 1/2/2/3;
+    width: 95%;
+    height: 50px;
+    border-radius: 16px;
+    padding: 3%;
+    border: none;
+    background-color: #E7E7E7;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .form__container .form-group input[type=email],
+  .form__container .form-group textarea {
+    width: 95%;
+    height: 50px;
+    border-radius: 16px;
+    padding: 3%;
+    border: none;
+    background-color: #E7E7E7;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .form__container .form-group textarea {
+    height: 250px;
+  }
+  .form__container button[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: #E99312;
+    height: 80px;
+    border-radius: 70px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+  .form__container .error {
+    border: 1px solid red;
+  }
+  .submitted-message {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 5%;
+    color: #383838;
+    color: #E99312;
+    padding: 10%;
+    border: 2px solid #E99312;
+    text-align: center;
+  }
+  .donateheader__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+  }
+  .donation__page--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation__page--container .donation__icons--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+  }
+  .donation__page--container .donation__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5% 0 5% 0;
+  }
+  .donation__page--container .donation__icon h5 {
+    font-family: Poppins;
+    font-size: 30px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+  }
+  .donation__page--container .donation__icon .donation__icon--circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7E7E7;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .donation__page--container .donation__icon .donation__icon--circle img {
+    transform: scale(1.8);
+  }
+  .donate__payment--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5% 10% 5%;
+    gap: 30px;
+  }
+  .donate__payment--container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .donate__payment--container p {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .donate__payment--container .donate__payment--boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+    padding-top: 5%;
+  }
+  .donate__payment--container .payment__container--details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .donate__payment--container .payment__container--details .payment__details--box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+    height: 140px;
+    background-color: #E99312;
+    border-radius: 16px;
+  }
+  .donate__payment--container .payment__container--details .payment__details--box h5 {
+    font-family: Poppins;
+    font-size: 30px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    width: 85%;
+  }
+  .campaign__section .campaign__container--wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 70vh;
+  }
+  .campaign__section .campaign__container--wrap .campaign__header--image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .campaign__section .campaign__container--wrap .campaign__header--text {
+    width: 70%;
+    height: 100%;
+    padding: 0 5% 0 5%;
+  }
+  .campaign__section .campaign__container--wrap .campaign__header--text h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 5%;
+    color: #383838;
+    padding-top: 5%;
+  }
+  .campaign__section .campaign__container--wrap .campaign__header--text p {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .campaign__section .campaign__content--container {
+    padding: 5%;
+  }
+  .campaign__section .campaign__content--container h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 50px;
+    padding-bottom: 5%;
+    color: #383838;
+  }
+  .campaign__section .campaign__content--container p {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .campaign__section .campaign__content--container h4 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 32px;
+    padding-bottom: 3%;
+    color: #383838;
+  }
+  .campaign__section .campaign__content--container h5 {
+    font-family: Poppins;
+    font-size: 30px;
+    color: #383838;
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+    color: #E99312;
+  }
+  .campaign__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 40vh;
+    padding: 2% 0 5% 0;
+  }
+  .campaign__grid .campaign__item--one {
+    grid-area: 1/1/2/3;
+  }
+  .campaign__grid .campaign__item--two {
+    grid-area: 1/3/2/4;
+  }
+  .campaign__grid .campaign__item--three {
+    grid-area: 1/4/2/5;
+  }
+  .campaign__grid .campaign__item--four {
+    grid-area: 1/5/2/7;
+  }
+  .campaign__grid .campaign__grid--item {
+    background-size: cover;
+    background-position: center;
+  }
+  .water__content--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    margin: 5% 0 5% 0;
+  }
+  .water__content--img img {
+    width: inherit;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #E7E7E7;
+    height: 370px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .footer__logo--container {
+    width: 350px;
+    height: 140px;
+    background-image: url("./images/mobilefooterlogo.webp");
+    background-size: cover;
+  }
+  footer .footer__content--row {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    padding-top: 20px;
+    gap: 5rem;
+  }
+  footer .footer__content--row .footer__content--column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  footer .footer__content--row .footer__content--column .footer__column--links {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    color: #383838;
+    text-decoration: none;
+  }
+}/*# sourceMappingURL=style.css.map */

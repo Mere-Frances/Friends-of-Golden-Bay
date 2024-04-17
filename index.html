@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+    <title>FOGB home</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
+</head>
+
+<body>
+
+    <!-- Responsiveness Nav Start -->
+    <nav class="navbar">
+        <!-- Logo Container -->
+        <div class="navbar__logo">
+            <a href="./index.html">FOGB</a>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="navbar__items" id="navigationItems">
+            <!-- dont use - for ID's -->
+            <a href="./index.html" class="active">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./campaigns.html">Campaigns</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./donate.html">Donate</a>
+        </div>
+
+        <!-- Hamburger Icons -->
+        <div class="navbar__hamburger">
+            <span id="openHam">&#9776;</span>
+            <span id="closeHam">&#x2716;</span>
+        </div>
+    </nav>
+    <!-- Responsiveness Nav End -->
+
+    <!-- Home header start -->
+    <div class="homeheader">
+        <div class="homeheader__image">
+            <h1>Friends of Golden Bay</h1>
+            <p>A voice for our environment in the Bay</p>
+        </div>
+        <!-- // home page quick link button -->
+        <div class="homeheader__buttons">
+            <a class="homeheader__buttons--card" href="./campaigns.html">
+                <img class="homeheader__buttons--card--icon" src="./images/ourcampaginssvg.svg"
+                    alt="our campaigns badge icon">
+                <h6>Campaigns</h6>
+            </a>
+            <a class="homeheader__buttons--card" href="./contact.html">
+                <img class="homeheader__buttons--card--icon" src="./images/reachoutsvg.svg"
+                    alt="our campaigns letter icon">
+                <h6>Reach Out</h6>
+            </a>
+            <a class="homeheader__buttons--card" href="./donate.html">
+                <img class="homeheader__buttons--card--icon" src="./images/supportussvg.svg"
+                    alt="our campaigns wallet icon">
+                <h6>Support Us</h6>
+            </a>
+        </div>
+    </div>
+
+    <!--     // our story section -->
+    <div class="ourstory__content--container">
+        <div class="ourstory__image">
+            <div class="ourstory__image--container">
+            </div>
+        </div>
+
+        <div class="main__text">
+            <h2>Our story</h2>
+            <p>We, Friends of Golden Bay, are a local environmental charity organization, dedicated to protecting and
+                fostering
+                the environment of the Golden Bay area. Some of our major involvements and campaigns include raising
+                awareness
+                of endangered species, campaigns against harmful aquaculture and mussel farming, and initiatives to
+                ensure
+                water
+                quality and preventing water pollution.</p>
+        </div>
+    </div>
+
+    <!--     // donation quick link section -->
+    <div class="donate__container">
+        <h5>Support us and our mission</h5>
+        <a class="main__button" href="./donate.html">Donate</a>
+    </div>
+
+    <!--     // home page quick link campaigns  -->
+    <div class="home__campaigns">
+        <h2>Campaigns</h2>
+    </div>
+    <div class="home__campaigns--container">
+        <!--     // home page quick link campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image mussel__farming"></div>
+            <h4>Mussel farming</h4>
+            <p>Prevent harmful mussel farming projects.</p>
+            <a id="mussels">Read more</a>
+        </div>
+        <!--     // home page quick link campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image species__protection"></div>
+            <h4>Species protection</h4>
+            <p>Raising awareness of the causes, and importantly what can be done to protect the birds.</p>
+            <a id="species" onclick="location.href='./campaignpage.html'">Read more</a>
+        </div>
+        <!--     // home page quick link campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image water__testing"></div>
+            <h4>Water quality tests</h4>
+            <p>Faecal bacteria and nitrate levels found in water tests.</p>
+            <a id="water">Read more</a>
+        </div>
+        <!--     // home page quick link campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image landscape"></div>
+            <h4>Landscape</h4>
+            <p>Standing up for the beauty, peace and solitude of our outstanding natural landscapes.</p>
+            <a class="campaign__card--button" href="">Read more</a>
+        </div>
+    </div>
+    <!--     // home page SEE ALL main button -->
+    <div class="home__campaigns--button">
+        <a class="main__button" href="./campaigns.html">See all</a>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer__logo--container">
+        </div>
+        <div class="footer__content--row">
+            <div class="footer__content--column">
+                <a class="footer__column--links" href="./index.html">Home</a>
+                <a class="footer__column--links" href="./about.html">About</a>
+                <a class="footer__column--links" href="./campaigns.html">Campaigns</a>
+            </div>
+            <div class="footer__content--column">
+                <a class="footer__column--links" href="./contact.html">Contact</a>
+                <a class="footer__column--links" href="./donate.html">Donate</a>
+                <a class="footer__column--links" href="">Copyright</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- custom script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

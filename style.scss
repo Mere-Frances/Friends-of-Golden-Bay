@@ -1,0 +1,2448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './mixins';
+
+.mussel__farming {
+    background-image: url('./images/musselfarmingcard.webp');
+    background-size: cover;
+}
+
+.species__protection {
+    background-image: url('./images/mobilespecies.webp');
+    background-size: cover;
+}
+
+.water__testing {
+    background-image: url('./images/mobilewatertest.webp');
+    background-size: cover;
+}
+
+.landscape {
+    background-image: url('./images/mobilelandscape.webp');
+    background-size: cover;
+}
+
+.aquaculture {
+    background-image: url('./images/aquaculturemobile.webp');
+    background-size: cover;
+}
+
+.climate__change {
+    background-image: url('./images/mobileglobalwarming.webp');
+    background-size: cover;
+}
+
+.mussel__farming--1996 {
+    background-image: url('./images/musselfarming1996.webp');
+    background-size: cover;
+}
+
+
+
+
+// INDIVIDUAL CAMPAIGN GRID IMAGES
+
+.mussel__header--image {
+    background-image: url('./images/musselfarmingcard.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.mussel__item--one {
+    background-image: url('./images/mobilemusselgrid1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.mussel__item--two {
+    background-image: url('./images/mobilemusselgrid2.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.mussel__item--three {
+    background-image: url('./images/mobilemusselgrid3.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.mussel__item--four {
+    background-image: url('./images/mobilemusselgrid4.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.species__header--image {
+    background-image: url('./images/mobilespecies.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.species__item--one {
+    background-image: url('./images/speciesprotection1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.species__item--two {
+    background-image: url('./images/speciesprotection2.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.species__item--three {
+    background-image: url('./images/speciesprotection3.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.species__item--four {
+    background-image: url('./images/speciesprotection4.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.water__header--image {
+    background-image: url('./images/mobilewatertest.webp');
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Archivo;
+}
+
+$primary-color: #E99312;
+$secondary-color: #ffffff;
+$tertiary-color: #E7E7E7;
+$text-color: #383838;
+$left-right-padding: 0 5% 0 5%;
+
+:root {
+    --primary-color: #E99312;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+// MOBILE START
+@media screen and (max-width: 600px) {
+
+    // PRIMARY MOBILE BUTTON
+    .main__button {
+        @include mobile_main_button;
+    }
+
+    // home page campaign quick links
+    .home__campaigns--container {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+        gap: 10vh;
+
+        // campaign card
+        .campaign__card {
+            @include campaign-card();
+        }
+
+        // campaign card image
+        .mussel-farming {
+            background-image: url('./images/musselfarmingcard.webp');
+        }
+    }
+
+    // navigation bar start
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 20px 0 20px;
+        position: relative;
+        z-index: 5;
+
+        .navbar__logo {
+            height: 20vh;
+            padding-top: 15px;
+
+            a {
+                font-family: Poppins;
+                font-size: 30px;
+                font-weight: 600;
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+
+        .navbar__items {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            gap: 40px;
+            padding-top: 20vh;
+            position: relative;
+            right: 80px;
+
+            a {
+
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 500;
+                color: $secondary-color;
+                text-decoration: none;
+            }
+
+            .active {
+                font-weight: 900;
+                text-decoration: underline;
+            }
+        }
+
+        // hamburger menu
+        .navbar__hamburger {
+            font-size: 2rem;
+            padding-top: 15px;
+            font-weight: 900;
+        }
+
+        .navbar__hamburger #closeHam {
+            display: none;
+            color: $secondary-color;
+
+        }
+
+        .navbar__hamburger #openHam {
+            color: $primary-color;
+
+        }
+    }
+
+    // navigation end
+
+    // HOME PAGE START
+    // 
+    // home page header
+    .homeheader {
+        .homeheader__image {
+            height: 270px;
+            width: 100%;
+            background-image: url('./images/homeheadermobile.webp');
+            background-size: cover;
+
+            h1 {
+                @include header_1();
+            }
+
+            p {
+                @include mobile_body_text;
+                text-align: center;
+                padding: 0 5% 0 5%;
+            }
+        }
+    }
+
+    // home page quick link button container
+    .homeheader__buttons {
+        position: relative;
+        bottom: 5vh;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+        height: 100px;
+        padding: 0 5% 0 5%;
+
+        // quick link cards
+        .homeheader__buttons--card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: $secondary-color;
+            width: calc(33.33% - 3vw);
+            max-width: 120px;
+            height: calc(90% + 3vh);
+            max-height: 120px;
+            box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            text-decoration: none;
+
+            // quick link icon
+            .homeheader__buttons--card--icon {
+                width: 25px;
+                height: 35px;
+            }
+
+            h6 {
+                @include header_6;
+            }
+        }
+    }
+
+    // our story section
+    .ourstory__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+
+        .ourstory__image--container {
+            position: relative;
+            bottom: 5vh;
+            width: 90%;
+            height: 185px;
+            background-image: url('./images/ourstorymobile.webp');
+            background-size: cover;
+        }
+    }
+
+    // main text paragraph
+    .main__text {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+
+        h2 {
+            @include header_2();
+        }
+
+        p {
+            @include mobile_body_text()
+        }
+    }
+
+    // donation quick link section
+    .donate__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $tertiary-color;
+        height: 150px;
+        gap: 20px;
+        background-image: url('./images/mobilefloralpattern.webp');
+        background-size: cover;
+
+        h5 {
+            @include header_5();
+        }
+
+        // donate button
+        .main__button {
+            @include mobile_main_button();
+        }
+    }
+
+    // home page quick link campaigns title container
+    .home__campaigns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 5% 0 5%;
+
+        h2 {
+            @include header_2();
+        }
+    }
+
+    // home page SEE ALL main button
+    .home__campaigns--button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+
+    // HOME PAGE END
+
+
+    // ABOUT PAGE START
+    // about page header
+    .aboutheader {
+        .aboutheader__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 270px;
+            width: 100%;
+            background-image: url('./images/aboutheader.webp');
+            background-size: cover;
+
+            h1 {
+                font-family: Poppins;
+                font-size: 48px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 500;
+                line-height: 50px;
+            }
+
+            p {
+                font-family: Poppins;
+                font-size: 20px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 300;
+                line-height: 30px;
+                padding: 0 20px 0 20px;
+            }
+        }
+    }
+
+    // local iwi icon container
+    .community__iwi--circles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        padding: 10% 5% 10% 5%;
+
+        // local iwi icons
+        .iwi__circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: $tertiary-color;
+            color: $primary-color;
+
+            h3 {
+                @include header_3();
+                text-align: center;
+            }
+        }
+    }
+
+    // about gallery grid
+    .about__gallery--grid {
+        display: grid;
+        height: 70vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        // grid item
+        .item__1 {
+            background-image: url('./images/gridimage1.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        // grid item
+        .item__2 {
+            background-image: url('./images/gridimage2.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        // grid item
+        .item__3 {
+            background-image: url('./images/gridimage3.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        // grid item
+        .item__4 {
+            background-image: url('./images/gridimage4.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 1 / 2 / 3 / 3;
+        }
+
+        // grid item
+        .item__5 {
+            background-image: url('./images/gridimage5.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 4 / 1 / 5 / 3;
+        }
+    }
+
+    // our history section
+    .our__history--image {
+        height: 40vh;
+        width: 80%;
+        padding: 10%;
+
+        .our__history--image--container {
+            height: 90%;
+            width: 100%;
+            background-image: url('./images/ourhistoryposter.webp');
+            background-size: cover;
+        }
+    }
+
+    // ABOUT US PAGE END
+
+
+    // CAMPAIGNS PAGE START
+    // campaign header
+    .homeheader {
+        .campaignheader__image {
+            height: 200px;
+            width: 100%;
+            background-image: url('./images/campaignflowersmobile.webp');
+            background-size: cover;
+
+            h1 {
+                font-family: Poppins;
+                font-size: 48px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 500;
+                line-height: 50px;
+                padding-top: 5vh;
+            }
+
+            p {
+                font-family: Poppins;
+                font-size: 20px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 300;
+                line-height: 30px;
+                padding: 0 20px 0 20px;
+            }
+        }
+    }
+
+    // styling added to the last campaign card
+    .campaign__card--end {
+        margin-bottom: 10vh;
+    }
+
+    // back to the top button
+    .back__top--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 85vh;
+        right: 5%;
+        z-index: 4;
+        background-color: $primary-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    // CAMPAIGN PAGE END
+
+
+    // CONTACT US PAGE START
+    .homeheader {
+
+        // contact header
+        .contactheader__image {
+            height: 130px;
+            width: 100%;
+
+            h1 {
+                font-family: Poppins;
+                font-size: 48px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 500;
+                line-height: 50px;
+                padding-top: 5vh;
+            }
+
+            p {
+                font-family: Poppins;
+                font-size: 20px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 300;
+                line-height: 30px;
+                padding: 0 20px 0 20px;
+            }
+        }
+    }
+
+    // contact information container
+    .contact__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+        background-color: $tertiary-color;
+        gap: 40px;
+
+        // contact information
+        .contact__content--text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h5 {
+                @include header_5();
+            }
+
+            p {
+                @include mobile_body_text();
+                text-align: center;
+            }
+        }
+    }
+
+    // CONTACT form
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        border-radius: 5px;
+
+        .contact__form {
+            width: 100%;
+        }
+
+        h2 {
+            @include header_2();
+        }
+
+        // contact form blocks
+        .form-group {
+            margin-bottom: 15px;
+            padding: 3% 7% 3% 7%;
+
+            label {
+                @include header_5();
+                text-align: left;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"],
+            textarea {
+                width: 95%;
+                height: 50px;
+                border-radius: 16px;
+                padding: 3%;
+                border: none;
+                background-color: $tertiary-color;
+                @include mobile_body_text();
+            }
+
+            textarea {
+                height: 200px;
+            }
+        }
+
+        // contact form submit button
+        button[type="submit"] {
+            @include mobile_main_button();
+            border: none;
+            cursor: pointer;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+    }
+
+    // Succesfully submitted message
+    .submitted-message {
+        @include header_2();
+        color: $primary-color;
+        padding: 10%;
+        border: 2px solid $primary-color;
+        text-align: center;
+    }
+
+    // CONTACT US PAGE END
+
+
+    //   DONATE PAGE START
+    // donate header
+    .homeheader {
+        .donateheader__image {
+            height: 190px;
+            width: 100%;
+
+            h1 {
+                font-family: Poppins;
+                font-size: 48px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 500;
+                line-height: 50px;
+                padding-top: 5vh;
+            }
+
+            p {
+                font-family: Poppins;
+                font-size: 20px;
+                text-align: center;
+                color: $text-color;
+                font-weight: 300;
+                line-height: 30px;
+                padding: 0 20px 0 20px;
+            }
+        }
+    }
+
+    // Container containing all content on the donate page
+    .donation__page--container {
+        @include middle-align;
+
+        // round donation icons
+        .donation__icons--container {
+            gap: 50px;
+            padding: 5% 5% 10% 5%;
+
+            // icons
+            .donation__icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+                padding: 10% 0 10% 0;
+
+                h5 {
+                    @include header_5();
+                }
+
+                // circle
+                .donation__icon--circle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $tertiary-color;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        // payment information container
+        .donate__payment--container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10% 5% 10% 5%;
+            gap: 30px;
+
+            h2 {
+                @include header_2();
+            }
+
+            p {
+                @include mobile_body_text();
+                text-align: center;
+            }
+
+            // payment buttons container
+            .payment__container--details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    @include header_2();
+                }
+
+                // payment buttons
+                .payment__details--box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70%;
+                    height: 70px;
+                    background-color: $primary-color;
+                    border-radius: 16px;
+                    ;
+
+                    h5 {
+                        @include header_5();
+                        color: white;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    // DONATE PAGE END
+
+
+    // INDIVIDUAL CAMPAIGN PAGE START
+    // campaign header
+    .campaign__section {
+        .campaign__container--wrap {
+            display: flex;
+            @include middle-align;
+
+            .campaign__header--text {
+                padding: $left-right-padding;
+            }
+
+            h2 {
+                @include header_2();
+                padding-top: 5%;
+            }
+
+            p {
+                @include mobile_body_text();
+            }
+        }
+
+        // header image
+        .campaign__header--image {
+            height: 270px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        // text content container
+        .campaign__content--container {
+            text-align: left;
+            padding: 5%;
+
+            h2 {
+                @include header_2();
+            }
+
+            p {
+                @include mobile_body_text();
+            }
+
+            h4 {
+                @include header_4();
+            }
+
+            h5 {
+                @include header_5();
+                text-align: left;
+                color: $primary-color;
+            }
+        }
+    }
+
+    // campaign image grid
+    .campaign__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 150vh;
+        padding: 15% 0 0% 0;
+
+        // grid item
+        .campaign__item--one {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        // grid item
+        .campaign__item--two {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        // grid item
+        .campaign__item--three {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        // grid item
+        .campaign__item--four {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        // grid item
+        .campaign__grid--item {
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    // additional image for water testing campaign
+    .water__content--img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-size: cover;
+        margin: 10% 0 10% 0;
+
+        img {
+            width: inherit;
+        }
+    }
+
+    // additional image for water testing campaign
+    .water__content--img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-size: cover;
+        margin: 10% 0 10% 0;
+
+        img {
+            width: inherit;
+        }
+    }
+
+    // INDIVIDUAL CAMPAIGN PAGE END
+
+    // MOBILE FOOTER START
+    footer {
+        @include mobile-footer();
+    }
+
+    // MOBILE FOOTER END
+}
+
+// 
+// 
+// MOBILE END
+
+
+
+// TABLET START
+// 
+// 
+@media screen and (min-width: 600px) and (max-width: 992px) {
+
+    // PRIMARY TABLET BUTTON
+    .main__button {
+        @include tablet_main_button;
+    }
+
+    // home page campaign quick links
+    .home__campaigns--container {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+        gap: 10vh;
+
+        // campaign card
+        .campaign__card {
+            @include tablet_campaign-card();
+        }
+
+        // campaign card image
+        .mussel-farming {
+            background-image: url('./images/musselfarmingcard.webp');
+        }
+    }
+
+    // USED HEADERS AND TEXT STYLING
+    h1 {
+        @include tablet_header_1();
+    }
+
+    h2 {
+        @include tablet_header_2();
+    }
+
+    h4 {
+        @include tablet_header_4();
+    }
+
+    p {
+        @include tablet_body_text();
+    }
+
+    // navigation bar start
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        height: 70px;
+        padding: 0 20px 0 20px;
+
+        .navbar__logo {
+            height: 20vh;
+            padding-top: 10px;
+
+            a {
+                font-family: Poppins;
+                font-size: 40px;
+                font-weight: 600;
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+
+        .navbar__items {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            gap: 40px;
+            padding-top: 20vh;
+            position: relative;
+            right: 105px;
+
+            a {
+
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 500;
+                color: $secondary-color;
+                text-decoration: none;
+            }
+
+            .active {
+                font-weight: 900;
+                text-decoration: underline;
+            }
+        }
+
+        // hamburger menu
+        .navbar__hamburger {
+            font-size: 2rem;
+            padding-top: 15px;
+            font-weight: 900;
+        }
+
+        .navbar__hamburger #closeHam {
+            display: none;
+            color: $secondary-color;
+
+        }
+
+        .navbar__hamburger #openHam {
+            color: $primary-color;
+
+        }
+    }
+
+    // navigation end
+
+    // HOME PAGE START
+    // 
+    // home page header
+    .homeheader {
+        .homeheader__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 400px;
+            width: 100%;
+            background-image: url('./images/homeheadermobile.webp');
+            background-size: cover;
+
+            p {
+                @include tablet_body_text();
+                padding: 20px 20px 0 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    // home page quick link button container
+    .homeheader__buttons {
+        position: relative;
+        bottom: 5vh;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+        height: 85px;
+        padding: $left-right-padding;
+
+        // quick link cards
+        .homeheader__buttons--card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            background-color: $secondary-color;
+            width: 150px;
+            height: 170%;
+            box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            text-decoration: none;
+
+            // quick link icon
+            .homeheader__buttons--card--icon {
+                width: 35px;
+                height: 40px;
+            }
+
+            h6 {
+                @include tablet_header_6;
+            }
+        }
+    }
+
+    // our story section
+    .ourstory__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 262px;
+
+        .ourstory__image--container {
+            position: relative;
+            bottom: 20%;
+            width: 95%;
+            height: 110%;
+            background-image: url('./images/ourstorymobile.webp');
+            background-size: cover;
+        }
+    }
+
+    // main text paragraph
+    .main__text {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    // donation quick link section
+    .donate__container {
+        @include middle-align;
+        background-color: $tertiary-color;
+        height: 190px;
+        gap: 20px;
+        background-image: url('./images/mobilefloralpattern.webp');
+        background-size: cover;
+
+        h5 {
+            @include tablet_header_5();
+        }
+    }
+
+    // home page quick link campaigns title container
+    .home__campaigns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 5% 0 5%;
+
+        h2 {
+            @include tablet_header_2();
+        }
+    }
+
+    // tablet container for campaign quick links
+    .home__campaigns--container {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+        gap: 10vh;
+
+        .campaign__card {
+            .campaign__card--image {
+                height: 40vh;
+            }
+        }
+
+    }
+
+    // home page SEE ALL main button
+    .home__campaigns--button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+
+    // HOME PAGE END
+
+
+    // ABOUT PAGE START
+    // about page header
+    .aboutheader__image {
+        @include middle-align;
+        height: 400px;
+        background-image: url('./images/aboutheader.webp');
+        background-size: cover;
+    }
+
+    // community content container
+    .aboutus__community--container {
+        @include middle-align;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    // local iwi icon container
+    .community__iwi--circles {
+        @include middle-align;
+        padding: 10% 5% 10% 5%;
+        gap: 5rem;
+
+        // local iwi icons
+        .iwi__circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: $tertiary-color;
+            color: $primary-color;
+
+            h3 {
+                @include tablet_header_3;
+                text-align: center;
+            }
+        }
+    }
+
+    // about gallery grid
+    .about__gallery--grid {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        // grid item
+        .item__1 {
+            background-image: url('./images/gridimage1.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        // grid item
+        .item__2 {
+            background-image: url('./images/gridimage2.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        // grid item
+        .item__3 {
+            background-image: url('./images/gridimage3.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        // grid item
+        .item__4 {
+            background-image: url('./images/gridimage4.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 1 / 2 / 3 / 3;
+        }
+
+        // grid item
+        .item__5 {
+            background-image: url('./images/gridimage5.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 4 / 1 / 5 / 3;
+        }
+    }
+
+    // our history section
+    .our__history--image {
+        height: 60vh;
+        width: 80%;
+        padding: 10% 10% 0 10%;
+
+        .our__history--image--container {
+            height: 90%;
+            width: 100%;
+            background-image: url('./images/ourhistoryposter.webp');
+            background-size: cover;
+        }
+    }
+
+    // ABOUT US PAGE END
+
+
+    // CAMPAIGNS PAGE START
+    // campaign header
+    .about__campaigns--container {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+        gap: 2vh;
+
+        .campaign__card {
+            @include tablet_campaign-card;
+        }
+
+        .mussel-farming {
+            background-image: url('./images/musselfarmingcard.webp');
+        }
+    }
+
+    // campaign header image for tablet
+    .campaignheader__image {
+        @include middle-align;
+        height: 220px;
+        background-image: url('./images/campaignflowerstablet.webp');
+        background-size: cover;
+    }
+
+    // back to the top button
+    .back__top--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 85vh;
+        right: 5%;
+        z-index: 4;
+        background-color: $primary-color;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        img {
+            transform: scale(1.2);
+        }
+    }
+
+    // CAMPAIGN PAGE END
+
+
+    // CONTACT US PAGE START
+    // contact header
+    .contactheader__image {
+        @include middle-align;
+        height: 220px;
+    }
+
+    // container containing all of the contact page content
+    .contact__page--container {
+        @include middle-align;
+
+        // contact information container
+        .contact__content {
+            @include middle-align;
+            background-color: $tertiary-color;
+            gap: 40px;
+            padding: 5%;
+            width: 90%;
+
+            // contact information
+            .contact__content--text {
+                @include middle-align;
+
+                h5 {
+                    @include tablet_header_5
+                }
+
+                p {
+                    @include tablet_body_text;
+                    text-align: center;
+                }
+            }
+        }
+
+        // CONTACT FORM
+        .form__container {
+            @include middle-align;
+            padding: 5%;
+            border-radius: 15px;
+            width: 70%;
+
+            .contact__form {
+                width: 100%;
+            }
+
+            h2 {
+                @include tablet_header_2;
+            }
+
+            // contact form blocks
+            .form-group {
+                margin-bottom: 15px;
+                padding: 3% 7% 3% 7%;
+
+                label {
+                    @include tablet_header_5;
+                    text-align: left;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                input[type="text"],
+                input[type="tel"],
+                input[type="email"],
+                textarea {
+                    width: 95%;
+                    height: 50px;
+                    border-radius: 16px;
+                    padding: 3%;
+                    border: none;
+                    background-color: $tertiary-color;
+                    @include mobile_body_text();
+                }
+
+                textarea {
+                    height: 250px;
+                }
+            }
+
+            // contact form submit button
+            button[type="submit"] {
+                @include tablet_main_button;
+                border: none;
+                cursor: pointer;
+            }
+
+            .error {
+                border: 1px solid red;
+            }
+        }
+
+        // Succesfully submitted message
+        .submitted-message {
+            @include tablet_header_2;
+            color: $primary-color;
+            padding: 10%;
+            border: 2px solid $primary-color;
+            text-align: center;
+        }
+    }
+
+    // CONTACT US PAGE END
+
+
+    //   DONATE PAGE START
+    // donate header
+    .donateheader__image {
+        @include middle-align;
+        height: 220px;
+    }
+
+    // Container containing all content on the donate page
+    .donation__page--container {
+        @include middle-align;
+
+        // donation icons
+        .donation__icon {
+            @include middle-align;
+            gap: 2rem;
+            padding: 15% 0 15% 0;
+
+            h5 {
+                @include tablet_header_5;
+            }
+
+            // circle
+            .donation__icon--circle {
+                @include middle-align;
+                background-color: $tertiary-color;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+
+                img {
+                    transform: scale(1.5)
+                }
+            }
+        }
+    }
+
+    // payment information container
+    .donate__payment--container {
+        @include middle-align;
+        padding: 10% 5% 10% 5%;
+        gap: 30px;
+
+        h2 {
+            @include tablet_header_2;
+        }
+
+        p {
+            @include tablet_body_text;
+            text-align: center;
+        }
+
+        // payment buttons container
+        .payment__container--details {
+            @include middle-align;
+
+            // payment buttons
+            .payment__details--box {
+                @include middle-align;
+                width: 90%;
+                height: 100px;
+                background-color: #E99312;
+                border-radius: 16px;
+
+                h5 {
+                    @include tablet_header_5;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    // DONATE PAGE END
+
+
+    // INDIVIDUAL CAMPAIGN PAGE START
+    // campaign header
+    .campaign__section {
+        .campaign__container--wrap {
+            display: flex;
+            @include middle-align;
+
+            .campaign__header--text {
+                padding: $left-right-padding;
+            }
+
+            h2 {
+                @include tablet_header_2;
+                padding-top: 5%;
+            }
+
+            p {
+                @include tablet_body_text;
+            }
+        }
+
+        // header image
+        .campaign__header--image {
+            height: 270px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        // text content container
+        .campaign__content--container {
+            padding: 5%;
+
+            // all header and text styling
+            h2 {
+                @include tablet_header_2;
+            }
+
+            p {
+                @include tablet_body_text;
+            }
+
+            h4 {
+                @include tablet_header_4;
+            }
+
+            h5 {
+                @include tablet_header_5;
+                text-align: left;
+                color: $primary-color;
+            }
+        }
+    }
+
+    // campaign image grid
+    .campaign__grid {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    // grid item
+    .campaign__item--one {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    // grid item
+    .campaign__item--two {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    // grid item
+    .campaign__item--three {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    // grid item
+    .campaign__item--four {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    // additional image for water testing campaign
+    .water__content--img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-size: cover;
+        margin: 10% 0 10% 0;
+
+        img {
+            width: inherit;
+        }
+    }
+
+    // INDIVIDUAL CAMPAIGN PAGE END
+
+    // TABLET FOOTER START
+    footer {
+        @include mobile-footer();
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        footer .footer__content--row {
+            gap: 2rem;
+        }
+    }
+
+    // TABLET FOOTER END
+}
+
+// 
+// 
+// TABLET END
+
+
+
+// DESKTOP START
+// 
+// 
+@media screen and (min-width: 992px) and (max-width: 1980px) {
+
+    // PRIMARY DESKTOP BUTTON
+    .main__button {
+        @include desktop_main_button;
+    }
+
+    // USED HEADERS AND TEXT STYLING
+    h1 {
+        @include desktop_header_1();
+    }
+
+    h2 {
+        @include desktop_header_2;
+    }
+
+    h4 {
+        @include desktop_header_4;
+    }
+
+
+    p {
+        @include desktop_body_text();
+
+    }
+
+    // navigation bar start
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        padding: 0 40px 0 40px;
+
+        .navbar__logo {
+            a {
+                font-family: Poppins;
+                font-size: 50px;
+                font-weight: 600;
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+
+        .navbar__items {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+
+            a {
+                font-family: Poppins;
+                font-size: 24px;
+                font-weight: 500;
+                color: $primary-color;
+                text-decoration: none;
+            }
+
+            .active {
+                font-weight: 900;
+                text-decoration: underline;
+            }
+        }
+
+        // hamburger menu
+        .navbar__hamburger {
+            display: none;
+        }
+    }
+
+    // navigation end
+
+    // HOME PAGE START
+    // 
+    // home page header
+    .homeheader {
+        .homeheader__image {
+            display: flex;
+            align-items: center;
+            padding-top: 15vh;
+            flex-direction: column;
+            height: 60vh;
+            width: 100%;
+            background-image: url('./images/homeheaderdesktop.webp');
+            background-size: cover;
+
+            p {
+                @include desktop_body_text;
+                text-align: center;
+            }
+        }
+    }
+
+    // home page quick link button container
+    .homeheader__buttons {
+        position: relative;
+        bottom: 5vh;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+        height: 85px;
+        padding: $left-right-padding;
+
+        // quick link cards
+        .homeheader__buttons--card {
+            @include middle-align;
+            text-align: center;
+            gap: 5%;
+            background-color: $secondary-color;
+            width: 250px;
+            height: 270%;
+            box-shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            text-decoration: none;
+
+            // quick link icon
+            .homeheader__buttons--card--icon {
+                width: 55px;
+                height: 60px;
+            }
+
+            h6 {
+                @include desktop_header_6;
+            }
+        }
+    }
+
+    // our story section
+    .ourstory__content--container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 10vh;
+        padding: 0 5% 5% 5%;
+
+        h2 {
+            display: flex;
+            @include desktop_header_2;
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        // specific main txt for our story section
+        .main__text {
+            padding: 2% 5% 0 5%;
+            align-items: flex-start;
+        }
+    }
+
+    // our story image
+    .ourstory__image {
+        @include middle-align;
+        width: 250rem;
+        height: 60vh;
+
+        .ourstory__image--container {
+            width: 100%;
+            height: 110%;
+            background-image: url('./images/ourstorydesktop.webp');
+            background-size: cover;
+        }
+    }
+
+    // donation quick link section
+    .donate__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        background-color: $tertiary-color;
+        height: 200px;
+        gap: 20px;
+        background-image: url('./images/desktopdonateflowers.webp');
+        background-size: cover;
+
+        h5 {
+            @include desktop_header_5;
+            width: 30%;
+            text-align: left;
+        }
+    }
+
+    // home page quick link campaigns title container
+    .home__campaigns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4% 5% 0 5%;
+    }
+
+    // home page SEE ALL main button
+    .home__campaigns--button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+
+    // desktop container for campaign quick links
+    .home__campaigns--container {
+        column-count: 2;
+        padding: 1% 5% 1% 5%;
+        gap: 5%;
+
+        // campaign card
+        .campaign__card {
+            margin-bottom: 10%;
+            height: 77vh;
+
+            .campaign__card--image {
+                height: 40vh;
+            }
+
+            h4 {
+                padding-top: 3%;
+            }
+
+            a {
+                @include desktop_campaign-button;
+            }
+        }
+    }
+
+    // HOME PAGE END
+
+
+    // ABOUT PAGE START
+    // about page header
+    .aboutheader__image {
+        @include middle-align;
+        height: 60vh;
+        background-image: url('./images/aboutheaderdesktop.webp');
+        background-size: cover;
+        background-position: center;
+    }
+
+    // community content container
+    .aboutus__community--container {
+        @include middle-align;
+        padding: 2% 5% 0 5%;
+
+        h2 {
+            text-align: left;
+            align-items: start;
+        }
+
+        p {
+            text-align: left;
+            align-items: start;
+        }
+    }
+
+    // local iwi icon container
+    .community__iwi--circles {
+        @include middle-align;
+        flex-direction: row;
+        padding: 10% 5% 10% 5%;
+        gap: 10rem;
+
+        // local iwi icons
+        .iwi__circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: $tertiary-color;
+            color: $primary-color;
+
+            h3 {
+                @include desktop_header_3;
+                text-align: center;
+            }
+        }
+    }
+
+    // about gallery grid
+    .about__gallery--grid {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        // grid item
+        .item__1 {
+            background-image: url('./images/gridimage1.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        // grid item
+        .item__2 {
+            background-image: url('./images/gridimage2.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        // grid item
+        .item__3 {
+            background-image: url('./images/gridimage3.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        // grid item
+        .item__4 {
+            background-image: url('./images/gridimage4.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 1 / 4 / 3 / 5;
+        }
+
+        // grid item
+        .item__5 {
+            background-image: url('./images/gridimage5.webp');
+            background-size: cover;
+            background-position: center;
+            grid-area: 1 / 2 / 2 / 4;
+        }
+    }
+
+    // our history title
+    .main__text {
+        @include middle-align;
+
+        h2 {
+            padding-top: 5%;
+        }
+
+        .ourhistory__content--container {
+            @include middle-align;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: $left-right-padding;
+
+            p {
+                width: 170%;
+            }
+
+            .our__history--image {
+                height: 40vh;
+                width: 80%;
+                padding: 0 5% 5% 5%;
+
+                .our__history--image--container {
+                    height: 90%;
+                    width: 100%;
+                    background-image: url('./images/ourhistoryposter.webp');
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    // ABOUT US PAGE END
+
+
+    // CAMPAIGNS PAGE START
+    // campaign header
+    .about__campaigns--container {
+        display: flex;
+        flex-direction: column;
+        padding: $left-right-padding;
+        gap: 2vh;
+
+        .campaign__card {
+            @include tablet_campaign-card;
+        }
+
+        .mussel-farming {
+            background-image: url('./images/musselfarmingcard.webp');
+        }
+    }
+
+    // campaign header image for desktop
+    .campaignheader__image {
+        @include middle-align;
+        height: 60vh;
+        background-image: url('./images/campaignflowersdesktop.webp');
+        background-size: cover;
+    }
+
+    // singular past campaign styling for desktop
+    .past__campaigns--single {
+        column-count: 2;
+        align-items: start;
+    }
+
+    // back to the top button
+    .back__top--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 85vh;
+        right: 3%;
+        z-index: 4;
+        background-color: $primary-color;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        img {
+            transform: scale(1.2);
+        }
+    }
+
+    // CAMPAIGN PAGE END
+
+
+    // CONTACT US PAGE START
+    // contact header container
+    .contact__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5%;
+
+        // contact page 'reach us' button container
+        .home__campaigns--button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            width: 50%;
+
+            // contact page 'reach us' button
+            .main__button {
+                width: 55%;
+                background-color: #E99312;
+                height: 80px;
+            }
+        }
+    }
+
+    // contact header
+    .contactheader__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 5rem;
+        height: 60vh;
+
+        h1 {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    // container containing all of the contact page content
+    .contact__page--container {
+        @include middle-align;
+
+        // contact information container
+        .contact__content {
+            @include middle-align;
+            flex-direction: row;
+            background-color: $tertiary-color;
+            gap: 40px;
+            padding: 5%;
+            width: 90%;
+
+            // contact information
+            .contact__content--text {
+                @include middle-align;
+
+                h5 {
+                    @include desktop_header_5
+                }
+
+                p {
+                    @include desktop_body_text;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // CONTACT FORM
+    .form__container {
+        @include middle-align;
+        padding: 5%;
+        border-radius: 15px;
+        width: 70%;
+
+        .contact__form {
+            width: 100%;
+        }
+
+        .contact__form--inline {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+
+        }
+
+        h2 {
+            @include tablet_header_2;
+        }
+
+        // contact form blocks
+        .form-group {
+            margin-bottom: 15px;
+            padding: 2rem;
+
+            label {
+                @include tablet_header_5;
+                text-align: left;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"] {
+                grid-area: 1 / 1 / 2 / 2;
+                width: 95%;
+                height: 50px;
+                border-radius: 16px;
+                padding: 3%;
+                border: none;
+                background-color: $tertiary-color;
+                @include mobile_body_text();
+            }
+
+            input[type="tel"] {
+                grid-area: 1 / 2 / 2 / 3;
+                width: 95%;
+                height: 50px;
+                border-radius: 16px;
+                padding: 3%;
+                border: none;
+                background-color: $tertiary-color;
+                @include mobile_body_text();
+            }
+
+
+            input[type="email"],
+            textarea {
+                width: 95%;
+                height: 50px;
+                border-radius: 16px;
+                padding: 3%;
+                border: none;
+                background-color: $tertiary-color;
+                @include mobile_body_text();
+            }
+
+            textarea {
+                height: 250px;
+            }
+        }
+
+        // contact form submit button
+        button[type="submit"] {
+            @include desktop_main_button;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+    }
+
+    // Succesfully submitted message
+    .submitted-message {
+        @include tablet_header_2;
+        color: $primary-color;
+        padding: 10%;
+        border: 2px solid $primary-color;
+        text-align: center;
+    }
+
+    // CONTACT US PAGE END
+
+
+    //   DONATE PAGE START
+    // donate header
+    .donateheader__image {
+        @include middle-align;
+        height: 290px;
+    }
+
+    // Container containing all content on the donate page
+    .donation__page--container {
+        @include middle-align;
+
+        // donation icons
+        .donation__icons--container {
+            @include middle-align;
+            flex-direction: row;
+            gap: 5%;
+            width: 100%;
+        }
+
+        .donation__icon {
+            @include middle-align;
+            gap: 2rem;
+            padding: 5% 0 5% 0;
+
+            h5 {
+                @include desktop_header_5;
+            }
+
+            // circle
+            .donation__icon--circle {
+                @include middle-align;
+                background-color: $tertiary-color;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+
+                img {
+                    transform: scale(1.8)
+                }
+            }
+        }
+    }
+
+    // payment information container
+    .donate__payment--container {
+        @include middle-align;
+        padding: 5% 5% 10% 5%;
+        gap: 30px;
+
+        h2 {
+            @include desktop_header_2;
+        }
+
+        p {
+            @include desktop_body_text;
+            text-align: center;
+        }
+
+        .donate__payment--boxes {
+            @include middle-align;
+            flex-direction: row;
+            gap: 5%;
+            padding-top: 5%;
+        }
+
+        // payment buttons container
+        .payment__container--details {
+            @include middle-align;
+
+            // payment buttons
+            .payment__details--box {
+                @include middle-align;
+                width: 28rem;
+                height: 140px;
+                background-color: #E99312;
+                border-radius: 16px;
+
+                h5 {
+                    @include desktop_header_5;
+                    color: white;
+                    width: 85%;
+                }
+            }
+        }
+    }
+
+    // DONATE PAGE END
+
+
+    // INDIVIDUAL CAMPAIGN PAGE START
+    // campaign header
+    .campaign__section {
+        .campaign__container--wrap {
+            @include middle-align;
+            flex-direction: row;
+            height: 70vh;
+
+            // header image
+            .campaign__header--image {
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+            }
+
+            .campaign__header--text {
+                width: 70%;
+                height: 100%;
+                padding: $left-right-padding;
+                ;
+
+                h2 {
+                    @include desktop_header_2;
+                    padding-top: 5%;
+                }
+
+                p {
+                    @include desktop_body_text;
+                }
+            }
+        }
+
+        // text content container
+        .campaign__content--container {
+            padding: 5%;
+
+            // all header and text styling
+            h2 {
+                @include desktop_header_2;
+            }
+
+            p {
+                @include desktop_body_text;
+            }
+
+            h4 {
+                @include desktop_header_4;
+            }
+
+            h5 {
+                @include desktop_header_5;
+                text-align: left;
+                color: $primary-color;
+            }
+        }
+    }
+
+    // campaign image grid
+    .campaign__grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 40vh;
+        padding: 2% 0 5% 0;
+
+        // grid item
+        .campaign__item--one {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+
+        // grid item
+        .campaign__item--two {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        // grid item
+        .campaign__item--three {
+            grid-area: 1 / 4 / 2 / 5;
+        }
+
+        // grid item
+        .campaign__item--four {
+            grid-area: 1 / 5 / 2 / 7;
+        }
+
+        // grid item
+        .campaign__grid--item {
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    // additional image for water testing campaign
+    .water__content--img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-size: cover;
+        margin: 5% 0 5% 0;
+
+        img {
+            width: inherit;
+        }
+    }
+
+    // INDIVIDUAL CAMPAIGN PAGE END
+
+    // DESKTOP FOOTER START
+    footer {
+        @include desktop-footer;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    // DESKTOP FOOTER END
+}
+
+// 
+// 
+// DESKTOP END

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact us</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
+</head>
+
+<body>
+
+    <!-- Responsiveness Nav Start -->
+    <nav class="navbar" id="campaignsHeader">
+        <!-- Logo Container -->
+        <div class="navbar__logo">
+            <a href="./index.html">FOGB</a>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="navbar__items" id="navigationItems">
+            <!-- dont use - for ID's -->
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./campaigns.html">Campaigns</a>
+            <a href="./contact.html" class="active">Contact</a>
+            <a href="./donate.html">Donate</a>
+        </div>
+
+        <!-- Hamburger Icons -->
+        <div class="navbar__hamburger">
+            <span id="openHam">&#9776;</span>
+            <span id="closeHam">&#x2716;</span>
+        </div>
+    </nav>
+    <!-- Responsiveness Nav End -->
+
+    <!-- contact header -->
+    <div class="homeheader contact__header">
+        <div class="contactheader__image">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you</p>
+        </div>
+        <!-- contact 'reach us' button -->
+        <div class="home__campaigns--button">
+            <a class="main__button" href="#contactForm">Reach out</a>
+        </div>
+    </div>
+
+    <!--         // contact information -->
+    <div class="contact__page--container">
+        <div class="contact__content">
+            <div class="contact__content--text">
+                <h5>Contact</h5>
+                <p>Heather Wallace Secretary for FOGB Inc.</p>
+            </div>
+            <div class="contact__content--text">
+                <h5>Feedback</h5>
+                <p>Send in any questions or feedback through our portal</p>
+            </div>
+            <div class="contact__content--text">
+                <h5>PO Box</h5>
+                <p>The Treasurer Friends of Golden Bay PO Box 274, Takaka</p>
+            </div>
+        </div>
+
+        <!-- contact form -->
+        <div class="form__container">
+            <h2>Send a message</h2>
+            <form class="contact__form" id="contactForm">
+                <div class="contact__form--inline">
+                    <!--         // contact form block -->
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <!--         // contact form block -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                <!--         // contact form block -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!--         // contact form block -->
+                <div class="form-group">
+                    <label for="comments">Comments (optional)</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <!--         // contact form submit button -->
+                <div class="home__campaigns--button">
+                    <button class="mobile_main_button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer__logo--container">
+        </div>
+        <div class="footer__content--row">
+            <div class="footer__content--column">
+                <a class="footer__column--links" href="./index.html">Home</a>
+                <a class="footer__column--links" href="./about.html">About</a>
+                <a class="footer__column--links" href="./campaigns.html">Campaigns</a>
+            </div>
+            <div class="footer__content--column">
+                <a class="footer__column--links" href="./contact.html">Contact</a>
+                <a class="footer__column--links" href="./donate.html">Donate</a>
+                <a class="footer__column--links" href="">Copyright</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- custom script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

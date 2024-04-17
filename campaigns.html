@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+    <title>Our campaigns</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
+</head>
+
+<body>
+
+    <!-- Responsiveness Nav Start -->
+    <nav class="navbar" id="campaignsHeader">
+        <!-- Logo Container -->
+        <div class="navbar__logo">
+            <a href="./index.html">FOGB</a>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="navbar__items" id="navigationItems">
+            <!-- dont use - for ID's -->
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./campaigns.html" class="active">Campaigns</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./donate.html">Donate</a>
+        </div>
+
+        <!-- Hamburger Icons -->
+        <div class="navbar__hamburger">
+            <span id="openHam">&#9776;</span>
+            <span id="closeHam">&#x2716;</span>
+        </div>
+    </nav>
+    <!-- Responsiveness Nav End -->
+
+    <!-- Home header start -->
+    <div class="homeheader">
+        <div class="campaignheader__image">
+            <h1>Campaigns</h1>
+            <p>Making a difference, one campaign at a time</p>
+        </div>
+    </div>
+
+    <!--     // campaign title -->
+    <div class="home__campaigns">
+        <h2>All Campaigns</h2>
+    </div>
+
+    <!--     // campaigns -->
+    <div class="home__campaigns--container">
+        <!-- campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image mussel__farming"></div>
+            <h4>Mussel farming</h4>
+            <p>Prevent harmful mussel farming projects.</p>
+            <a id="mussels">Read more</a>
+        </div>
+        <!-- campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image species__protection"></div>
+            <h4>Species protection</h4>
+            <p>Raising awareness of the causes, and importantly what can be done to protect the birds.</p>
+            <a id="species" onclick="location.href='./campaignpage.html'">Read more</a>
+        </div>
+        <!-- campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image water__testing"></div>
+            <h4>Water quality tests</h4>
+            <p>Faecal bacteria and nitrate levels found in water tests.</p>
+            <a id="water">Read more</a>
+        </div>
+        <!-- campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image landscape"></div>
+            <h4>Landscape</h4>
+            <p>Standing up for the beauty, peace and solitude of our outstanding natural landscapes.</p>
+            <a class="campaign__card--button" href="">Read more</a>
+        </div>
+        <!-- campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image aquaculture"></div>
+            <h4>Aquaculture</h4>
+            <p>Protecting our water ways from future degradation.</p>
+            <a class="campaign__card--button" href="">Read more</a>
+        </div>
+        <!-- campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image climate__change"></div>
+            <h4>Climate change</h4>
+            <p>Potential environmental changes and damages.</p>
+            <a class="campaign__card--button" href="">Read more</a>
+        </div>
+    </div>
+    <!-- past campaign -->
+    <div class="home__campaigns">
+        <h2>Past Campaigns</h2>
+    </div>
+    <div class="home__campaigns--container past__campaigns--single">
+        <div class="campaign__card">
+            <div class="campaign__card--image mussel__farming--1996"></div>
+            <h4>1996 Mussel farming</h4>
+            <p>Opposing the opening up of Golden Bay to large-scale aquaculture.</p>
+            <a class="campaign__card--button" href="">Read more</a>
+        </div>
+    </div>
+    <!-- future campaigns -->
+    <div class="home__campaigns">
+        <h2>Future Campaigns</h2>
+    </div>
+    <div class="home__campaigns--container">
+        <!-- campaign -->
+        <div class="campaign__card">
+            <div class="campaign__card--image aquaculture"></div>
+            <h4>Aquaculture</h4>
+            <p>Protecting our water ways from future degradation.</p>
+            <a class="campaign__card--button" href="">Read more</a>
+        </div>
+        <!-- campaign -->
+        <div class="campaign__card campaign__card--end">
+            <div class="campaign__card--image climate__change"></div>
+            <h4>Climate change</h4>
+            <p>Potential environmental changes and damages.</p>
+            <a class="campaign__card--button" href="">Read more</a>
+        </div>
+    </div>
+
+    <!--     // back to the top button -->
+    <a class="back__top--button" href="#campaignsHeader">
+        <img src="./images/mobile-arrow.webp" alt="white arrow">
+    </a>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer__logo--container">
+        </div>
+        <div class="footer__content--row">
+            <div class="footer__content--column">
+                <a class="footer__column--links" href="./index.html">Home</a>
+                <a class="footer__column--links" href="./about.html">About</a>
+                <a class="footer__column--links" href="./campaigns.html">Campaigns</a>
+            </div>
+            <div class="footer__content--column">
+                <a class="footer__column--links" href="./contact.html">Contact</a>
+                <a class="footer__column--links" href="./donate.html">Donate</a>
+                <a class="footer__column--links" href="">Copyright</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- custom script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
