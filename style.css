@@ -5,36 +5,43 @@
 .mussel__farming {
   background-image: url("./images/musselfarmingcard.webp");
   background-size: cover;
+  background-position: center;
 }
 
 .species__protection {
   background-image: url("./images/mobilespecies.webp");
   background-size: cover;
+  background-position: center;
 }
 
 .water__testing {
   background-image: url("./images/mobilewatertest.webp");
   background-size: cover;
+  background-position: center;
 }
 
 .landscape {
   background-image: url("./images/mobilelandscape.webp");
   background-size: cover;
+  background-position: center;
 }
 
 .aquaculture {
   background-image: url("./images/aquaculturemobile.webp");
   background-size: cover;
+  background-position: center;
 }
 
 .climate__change {
   background-image: url("./images/mobileglobalwarming.webp");
   background-size: cover;
+  background-position: center;
 }
 
 .mussel__farming--1996 {
   background-image: url("./images/musselfarming1996.webp");
   background-size: cover;
+  background-position: center;
 }
 
 .mussel__header--image {
@@ -73,6 +80,12 @@
   background-position: center;
 }
 
+.wainui__header--image {
+  background-image: url("./images/mobilelandscape.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .species__item--one {
   background-image: url("./images/speciesprotection1.webp");
   background-size: cover;
@@ -93,6 +106,30 @@
 
 .species__item--four {
   background-image: url("./images/speciesprotection4.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.wainui__item--one {
+  background-image: url("./images/wainui1.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.wainui__item--two {
+  background-image: url("./images/wainui2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.wainui__item--three {
+  background-image: url("./images/wainui3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.wainui__item--four {
+  background-image: url("./images/wainui4.webp");
   background-size: cover;
   background-position: center;
 }
@@ -118,8 +155,31 @@ html {
 body {
   margin: 0;
 }
+body #alert {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
+  .italic {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+    color: #383838;
+    font-style: italic;
+  }
+  .landscape__pdf {
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
+    color: #E99312;
+    text-decoration: none;
+  }
   .main__button {
     display: flex;
     align-items: center;
@@ -795,6 +855,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
   }
   .donation__page--container .donate__payment--container .payment__container--details h2 {
     font-family: Poppins;
@@ -970,6 +1031,26 @@ body {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 992px) {
+  .italic {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    color: #383838;
+    font-style: italic;
+  }
+  .landscape__pdf {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    color: #E99312;
+    text-decoration: none;
+  }
   .main__button {
     display: flex;
     align-items: center;
@@ -1698,6 +1779,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
   }
   .donate__payment--container .payment__container--details .payment__details--box {
     display: flex;
@@ -1855,6 +1937,26 @@ body {
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1980px) {
+  .italic {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    color: #383838;
+    font-style: italic;
+  }
+  .landscape__pdf {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #383838;
+    text-align: left;
+    line-height: 40px;
+    font-weight: 300;
+    color: #E99312;
+    text-decoration: none;
+  }
   .main__button {
     display: flex;
     align-items: center;
@@ -2476,12 +2578,11 @@ body {
     line-height: 30px;
     font-weight: 300;
   }
-  .form__container .form-group input[type=email],
-  .form__container .form-group textarea {
+  .form__container .form-group input[type=email] {
     width: 95%;
     height: 50px;
     border-radius: 16px;
-    padding: 3%;
+    padding: 1.5% 3% 1.5% 2%;
     border: none;
     background-color: #E7E7E7;
     font-family: Roboto;
@@ -2493,6 +2594,17 @@ body {
   }
   .form__container .form-group textarea {
     height: 250px;
+    width: 95%;
+    border-radius: 16px;
+    padding: 2% 3% 2% 2%;
+    border: none;
+    background-color: #E7E7E7;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #383838;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 300;
   }
   .form__container button[type=submit] {
     display: flex;

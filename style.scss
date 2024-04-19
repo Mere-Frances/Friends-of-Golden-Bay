@@ -6,36 +6,43 @@
 .mussel__farming {
     background-image: url('./images/musselfarmingcard.webp');
     background-size: cover;
+    background-position: center;
 }
 
 .species__protection {
     background-image: url('./images/mobilespecies.webp');
     background-size: cover;
+    background-position: center;
 }
 
 .water__testing {
     background-image: url('./images/mobilewatertest.webp');
     background-size: cover;
+    background-position: center;
 }
 
 .landscape {
     background-image: url('./images/mobilelandscape.webp');
     background-size: cover;
+    background-position: center;
 }
 
 .aquaculture {
     background-image: url('./images/aquaculturemobile.webp');
     background-size: cover;
+    background-position: center;
 }
 
 .climate__change {
     background-image: url('./images/mobileglobalwarming.webp');
     background-size: cover;
+    background-position: center;
 }
 
 .mussel__farming--1996 {
     background-image: url('./images/musselfarming1996.webp');
     background-size: cover;
+    background-position: center;
 }
 
 
@@ -82,6 +89,12 @@
     background-position: center;
 }
 
+.wainui__header--image {
+    background-image: url('./images/mobilelandscape.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 .species__item--one {
     background-image: url('./images/speciesprotection1.webp');
     background-size: cover;
@@ -105,6 +118,34 @@
     background-size: cover;
     background-position: center;
 }
+
+
+
+
+.wainui__item--one {
+    background-image: url('./images/wainui1.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.wainui__item--two {
+    background-image: url('./images/wainui2.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.wainui__item--three {
+    background-image: url('./images/wainui3.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.wainui__item--four {
+    background-image: url('./images/wainui4.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
@@ -137,6 +178,9 @@ html {
 
 body {
     margin: 0;
+    #alert{
+        cursor: pointer;
+    }
 }
 
 
@@ -144,6 +188,18 @@ body {
 
 // MOBILE START
 @media screen and (max-width: 600px) {
+
+    .italic{
+        @include mobile_body_text;
+        color:$text-color;
+        font-style: italic;
+    }
+
+    .landscape__pdf{
+        @include mobile_body_text;
+        color:$primary-color;
+        text-decoration: none;
+    }
 
     // PRIMARY MOBILE BUTTON
     .main__button {
@@ -778,6 +834,7 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-bottom:3rem;
 
                 h2 {
                     @include header_2();
@@ -945,6 +1002,18 @@ body {
 // 
 // 
 @media screen and (min-width: 600px) and (max-width: 992px) {
+
+    .italic{
+        @include tablet_body_text;
+        color:$text-color;
+        font-style: italic;
+    }
+
+    .landscape__pdf{
+        @include tablet_body_text;
+        color:$primary-color;
+        text-decoration: none;
+    }
 
     // PRIMARY TABLET BUTTON
     .main__button {
@@ -1505,6 +1574,7 @@ body {
         // payment buttons container
         .payment__container--details {
             @include middle-align;
+            margin-bottom:3rem;
 
             // payment buttons
             .payment__details--box {
@@ -1649,6 +1719,17 @@ body {
 // 
 // 
 @media screen and (min-width: 992px) and (max-width: 1980px) {
+
+    .italic{
+        @include desktop_body_text;
+        color:$text-color;
+        font-style: italic;
+    }
+    .landscape__pdf{
+        @include desktop_body_text;
+        color:$primary-color;
+        text-decoration: none;
+    }
 
     // PRIMARY DESKTOP BUTTON
     .main__button {
@@ -2162,6 +2243,7 @@ body {
         .form-group {
             margin-bottom: 15px;
             padding: 2rem;
+            
 
             label {
                 @include tablet_header_5;
@@ -2193,12 +2275,11 @@ body {
             }
 
 
-            input[type="email"],
-            textarea {
+            input[type="email"] {
                 width: 95%;
                 height: 50px;
                 border-radius: 16px;
-                padding: 3%;
+                padding: 1.5% 3% 1.5% 2%;
                 border: none;
                 background-color: $tertiary-color;
                 @include mobile_body_text();
@@ -2206,6 +2287,12 @@ body {
 
             textarea {
                 height: 250px;
+                width: 95%;
+                border-radius: 16px;
+                padding: 2% 3% 2% 2%;
+                border: none;
+                background-color: $tertiary-color;
+                @include mobile_body_text();
             }
         }
 

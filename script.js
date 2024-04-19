@@ -1,3 +1,15 @@
+    // Get the <a> element by its id
+    var alertLink = document.getElementById('alert');
+
+    // Add an event listener to the <a> element
+    alertLink.addEventListener('click', function(event) {
+      // Prevent the default behavior of the link
+      event.preventDefault();
+
+      // Trigger the alert when the link is clicked
+      alert("This website is intended solely for educational purposes. The content provided here is for informational purposes only and should not be considered as promotional or commercial. The content on this website adhers to copyright usage laws.");
+    });
+
 const hamburgerEvent = (navigation, close, open, bgColor, logoColor, height, zIndex) => {
     navigationItems.style.display = navigation;
     closeHam.style.display = close;
@@ -76,8 +88,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // HIDE
             document.getElementById('speciesContent').style.display = 'none';
             document.getElementById('musselContent').style.display = 'none';
-
-        }
+        } else if (mode === 'land') {
+          // DISPLAY
+          document.getElementById('landscapeContent').style.display = 'block';
+          // HIDE
+          document.getElementById('waterContent').style.display = 'none';
+          document.getElementById('speciesContent').style.display = 'none';
+          document.getElementById('musselContent').style.display = 'none';
+      }
 
 
 
@@ -96,8 +114,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Redirect to the modified page with mode parameter
         window.location.href = 'campaignpage.html?mode=water';
     });
+
+    document.getElementById('land').addEventListener('click', function() {
+      // Redirect to the modified page with mode parameter
+      window.location.href = 'campaignpage.html?mode=land';
+  });
 });
-
-
 
 
